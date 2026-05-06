@@ -75,13 +75,16 @@ def center_text():
         margin: 10px 0;  /* Add some vertical spacing */
     }
     .pick-bubble {
-        background-color: "#FFFFFF";  /* clear background */
-        color: white;  /* white text */
-        border-radius: 75px;  /* Rounded corners for the bubble */
-        padding: 10px 20px;  /* Top/bottom and left/right padding */
-        font-size: 48px;  /* Larger font size */
-        box-shadow: 2px 2px 12px rgba(0,0,0,0.2);  /* Subtle shadow */
-        transition: transform 3s ease;  /* Smooth scaling transition */
+        background-color: rgba(255, 255, 255, 0.8);  /* Lighter background with higher opacity for better visibility */
+        color: #000000;  /* Black text for high contrast */
+        border-radius: 75px;  /* Pronounced rounded corners */
+        padding: 20px 40px;  /* Increased padding for a better visual effect */
+        font-size: 48px;  /* Large font size for readability */
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);  /* Enhanced shadow for a 3D effect */
+        transition: transform 0.3s ease;  /* Faster transition for a snappy feel */
+        text-align: center;  /* Ensures text is always centered within the bubble */
+        width: fit-content;  /* Ensures the width of the bubble fits the content with padding */
+        margin: 10px auto;  /* Centers the bubble horizontally and adds vertical spacing */
     }
     .pick-bubble:hover {
         transform: scale(1.1);  /* Slightly enlarge on hover */
